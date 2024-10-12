@@ -38,11 +38,11 @@ function Description({ descriptionText }: {descriptionText: string}) {
         try {
             console.log(code)
             console.log(language)
-            const response = await axios.post("http://localhost:3000/api/v1/submissions", {
+            const response = await axios.post("http://localhost:4000/api/v1/submissions", {
                 code,
                 language,
-                userId: "1",
-                problemId: "6671b5e86f909d206b2d40a4"
+                userID: '1',
+                problemId: "670a4b3b9a863c12c17ed3c5"
             });
             console.log(response);
             return response;
